@@ -40,7 +40,7 @@ export const Hero = () => {
             }
         })
         .to('.right-leaf', {y: 200}, 0)
-        .to('.left-leaf', {y: -200}, 0)
+        .to('.left-leaf', {y: -200}, 0);
 
         const startValue = isMobile ? 'top 50%' : 'center 60%';
         const endValue = isMobile ? '120% top' : 'bottom top';
@@ -53,19 +53,19 @@ export const Hero = () => {
                 scrub: true,
                 pin: true,
             }
-        })
+        });
 
         videoRef.current.onloadedmetadata = () => {
             tl.to(videoRef.current, {
                 currentTime: videoRef.current.duration
             });
-        }
-    }, [])
+        };
+    }, []);
 
     return (
         <>
         <section id="hero" className="noisy">
-            <h1 className="title"> MOJITO </h1>
+            <h1 className="title"> Cocktails </h1>
             <img src="/images/hero-left-leaf.png"   alt="left-leaf" className="left-leaf" />
             <img src="/images/hero-right-leaf.png"   alt="right-leaf" className="right-leaf" />
 
@@ -96,7 +96,6 @@ export const Hero = () => {
                 playsInline
                 preload="auto"
             />
-
         </div>
         </>
     )
