@@ -1,3 +1,6 @@
+# Github page (link):
+https://sem987.github.io/GSAP-Project/
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
